@@ -1,0 +1,49 @@
+<h1 class="heading">Eat-Da-Burger
+<section class="burgerImg"><img src="/assets/burger.png" alt="Burger"></section>
+</h1>
+
+<div class="card addBurger" style="width: 50rem;">
+
+<div class="card-header">
+    Add a burger
+  </div>
+<ul class="list-group list-group-flush"></ul>
+<form class="create-form">
+<div class="input-group">
+  <input type="text" class="form-control" placeholder="New burger" id="ca" name="name">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="submit">Add Burger</button>
+  </div>
+</div>
+</form>
+</ul>
+</div>
+<div class="row">
+  
+
+<div class="col-6 uneaten">
+  <div class="card" style="width: 25rem;">
+    <div class="card-header">Burgers to eat!</div>
+
+    <ul class="list-group list-group-flush">
+      {{#each burgers}}
+      {{#unless eaten}}
+      {{> burgers/burger-block eaten=false}}
+      {{/unless}}
+      {{/each}}
+    </ul>
+  </div>
+</div>
+<div class="col-6 eaten">
+  <div class="card" style="width: 25rem;">
+    <div class="card-header">Burgers eaten!</div>
+
+    <ul class="list-group list-group-flush">
+      {{#each burgers}}
+      {{#if eaten}}
+      {{> burgers/burger-block eaten=true}}
+      {{/if}}
+      {{/each}}
+    </ul>
+  </div>
+</div>

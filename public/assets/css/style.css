@@ -1,0 +1,47 @@
+.list-group-item {
+  padding: 5px;
+  margin: 5px;
+}
+
+.card{
+  margin:20px;
+}
+
+.btn-success {
+  float:right;
+}
+.card{
+  margin-left:auto;
+  margin-right:auto;
+}
+.addBurger{
+  margin:auto;
+}
+.heading{
+  text-align:center;
+  background:#FF770F;
+  color:white;
+  margin:20px;
+  font-size: 8vh;
+  border-radius:10px;
+}
+
+.uneaten{
+  background:#FF770F;
+}
+.eaten{
+  background:lightgoldenrodyellow;
+}
+.col-6{
+  margin-bottom:20px;
+  margin-top:20px;
+  border-radius:10px;
+}
+.burgerImg{
+  margin:auto;
+  background:#FF770F;
+  border-radius:10px;
+}
+img{
+  margin-bottom:30px;
+}
